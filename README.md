@@ -32,9 +32,27 @@ sudo apt install mariadb-server php-mysql  -y
 sudo service apache2 restart  
 sudo mysql_secure_installation  
 ```
-Faite la config demandé.
+Faite la config demandée.
 ### Instalation de de hostapd et dnsmmasq
 ```sudo apt install hostapd dnsmasq ```
 ### Installation de PhpMyAdmin
-```sudo apt install phpmyadmin  -y  ```
-Sélectionne
+```sudo apt install phpmyadmin  -y  ``` </br>
+Sélectionner dans la config Apache2, configurer phpmyadmin, configurer la base de données pour phpmyadmin avec dbconfig-common.
+Vérifier le fonctionnement sur https://localhost/phpmyadmin ou sur l'IP de votre machine suivi de de /phpmyadmin .
+```
+sudo phpenmod mysqli
+sudo service apache2 restart 
+```
+En cas d'erreur :
+```sudo In  -s /usr/share/phpmyadmin /var/www/html/phpmyadmin  ```
+Pour gérer les pages web, modifier les droits d'acces.
+```
+Is  -Ih /var/www/ 
+
+sudo chown  -R pi:www-data /var/www/html/  
+
+sudo chmod -R 770 /var/www/html/  
+
+Is  -Ih /var/www/
+```
+##Mise en place d'une IP fixe

@@ -22,5 +22,4 @@ Test du PHP (peut être passé)
 sudo cd /var/www/html 
 sudo rm index.html
 sudo nano index.php
-
 ```

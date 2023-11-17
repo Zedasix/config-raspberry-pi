@@ -55,11 +55,49 @@ sudo chmod -R 770 /var/www/html/
 
 Is  -Ih /var/www/
 ```
-##Mise en place d'une IP fixe
-```sudo nano /etc/dhcp/dhcpcd.conf``` </br>
+## Mise en place de la partie réseau
+### Mise en place d'une IP fixe </br>
+```sudo nano /etc/dhcp/dhcpcd.conf```
 ```
 Interface wlan0 
 static ip_address=192.168.1.1/24 
 nohook wpa_supplicant 
 ```
-####
+### Création du réseau wifi avec HostAPD
+```sudo nano /etc/hostapd/hostapd.conf ```
+```
+Country_code=FR 
+
+interface=wlan0 
+
+driver=nl80211 
+
+ssid=”test-WIFI” 
+
+channel=9 
+
+auth_algs=1 
+
+wpa=2 
+
+wpa_passphrase=test 
+
+wpa_key_mgmt=WPA-PSK 
+
+wpa_pairwise=TKIP CCMP 
+
+rsn_pairwise=CCMP 
+
+hw_mode=g 
+
+macaddr_acl=0 
+
+ignore_broadcast_ssid=0
+```
+## Configuration de de dnsmasq
+```sudo nano /etc/dnsmasq.conf ```
+```
+interface=wlan0 
+dhcp-range=192.168.1.10,192.168.1.100,255.255.255.0,24h
+```
+```systemctl start dnsmasq ```

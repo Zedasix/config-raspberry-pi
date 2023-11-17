@@ -56,3 +56,9 @@ sudo chmod -R 770 /var/www/html/
 Is  -Ih /var/www/
 ```
 ##Mise en place d'une IP fixe
+```sudo nano /etc/dhcp/dhcpcd.conf``` </br>
+```
+Interface wlan0 
+static ip_address=192.168.1.1/24 
+nohook wpa_supplicant 
+```

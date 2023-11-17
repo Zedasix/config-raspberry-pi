@@ -23,7 +23,7 @@ sudo cd /var/www/html
 sudo rm index.html
 sudo nano index.php
 ```
-Dans le inderx.php:
+Dans le index.php:
 ```<?php echo "Bonjour tout le monde"; ?›  ```
 On redémarre le service ```sudo service apache2 restart ``` et on retourne sur notre http://localhost/ ou votre IP.
 ### Installation de MariaDB Server
@@ -32,3 +32,6 @@ sudo apt install mariadb-server php-mysql  -y
 sudo service apache2 restart  
 sudo mysql_secure_installation  
 ```
+Faite la config demandé.
+### Instalation de de hostapd et dnsmmasq
+```sudo apt install hostapd dnsmasq ```

@@ -35,3 +35,6 @@ sudo mysql_secure_installation
 Faite la config demandé.
 ### Instalation de de hostapd et dnsmmasq
 ```sudo apt install hostapd dnsmasq ```
+### Installation de PhpMyAdmin
+```sudo apt install phpmyadmin  -y  ```
+Sélectionne

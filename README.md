@@ -25,3 +25,10 @@ sudo nano index.php
 ```
 Dans le inderx.php:
 ```<?php echo "Bonjour tout le monde"; ?›  ```
+On redémarre le service ```sudo service apache2 restart ``` et on retourne sur notre http://localhost/ ou votre IP.
+### Installation de MariaDB Server
+```
+sudo apt install mariadb-server php-mysql  -y
+sudo service apache2 restart  
+sudo mysql_secure_installation  
+```

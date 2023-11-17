@@ -23,8 +23,8 @@ sudo cd /var/www/html
 sudo rm index.html
 sudo nano index.php
 ```
-Dans le index.php:
-```<?php echo "Bonjour tout le monde"; ?›  ```
+Dans le index.php ajouter cette ligne: </br>
+```<?php echo "Hello World"; ?›  ```
 On redémarre le service ```sudo service apache2 restart ``` et on retourne sur notre http://localhost/ ou votre IP.
 ### Installation de MariaDB Server
 ```
@@ -48,11 +48,8 @@ En cas d'erreur :
 Pour gérer les pages web, modifier les droits d'acces.
 ```
 Is  -Ih /var/www/ 
-
 sudo chown  -R pi:www-data /var/www/html/  
-
 sudo chmod -R 770 /var/www/html/  
-
 Is  -Ih /var/www/
 ```
 ## Mise en place de la partie réseau
@@ -67,31 +64,18 @@ nohook wpa_supplicant
 ```sudo nano /etc/hostapd/hostapd.conf ```
 ```
 Country_code=FR 
-
 interface=wlan0 
-
 driver=nl80211 
-
 ssid=”test-WIFI” 
-
 channel=9 
-
 auth_algs=1 
-
 wpa=2 
-
 wpa_passphrase=test 
-
 wpa_key_mgmt=WPA-PSK 
-
 wpa_pairwise=TKIP CCMP 
-
 rsn_pairwise=CCMP 
-
 hw_mode=g 
-
 macaddr_acl=0 
-
 ignore_broadcast_ssid=0
 ```
 ## Configuration de de dnsmasq

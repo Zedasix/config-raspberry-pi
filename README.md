@@ -23,3 +23,5 @@ sudo cd /var/www/html
 sudo rm index.html
 sudo nano index.php
 ```
+Dans le inderx.php:
+```<?php echo "Bonjour tout le monde"; ?›  ```

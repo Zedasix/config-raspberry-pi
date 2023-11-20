@@ -17,7 +17,7 @@ key_mgmt=WPA-PSK}
 ```sudo apt install apache2 -y``` </br>
 Vérifier le fonctionnement dans une navigateur internet sur http://localhost/ ou votre IP. (peut être passé)
 ### Installation de PHP
-```sudo apt install php  -y  ```
+```sudo apt install php  -y  ``` </br>
 Test du PHP (peut être passé)
 ```
 sudo cd /var/www/html 

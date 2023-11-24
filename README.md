@@ -58,6 +58,8 @@ Is  -Ih /var/www/
 ```
 ## Mise en place de la partie réseau
 ### Mise en place d'une IP fixe </br>
+```sudo nano /etc/dhcpcd.conf```
+ou
 ```sudo nano /etc/dhcp/dhcpcd.conf```
 ```
 Interface wlan0 

@@ -5,9 +5,9 @@ Tuto pour utiliser un ESP8266 connecté à un Raspberry Pi 4, la config n'est pa
 ```
 Country=FR 
 network={ 
-  ssid=”Wifi Saint Joseph TP” 
+  ssid=”WifiSSID” 
   scan_ssid=1 
-  psk=”STjO2018BTSSN*” 
+  psk=”lemotdepassedoitfaire8caractereminimumpascommecettepharesuperlonguepourrien” 
 key_mgmt=WPA-PSK}
 ```
 ## Installation des paquets

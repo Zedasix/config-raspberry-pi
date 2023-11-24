@@ -67,19 +67,19 @@ nohook wpa_supplicant
 ### Création du réseau wifi avec HostAPD
 ```sudo nano /etc/hostapd/hostapd.conf ```
 ```
-Country_code=FR 
-interface=wlan0 
-driver=nl80211 
-ssid=”test-WIFI” 
-channel=9 
-auth_algs=1 
-wpa=2 
-wpa_passphrase=test 
-wpa_key_mgmt=WPA-PSK 
-wpa_pairwise=TKIP CCMP 
-rsn_pairwise=CCMP 
+Country_code=FR
+interface=wlan0
+driver=nl80211
+ssid=letmedoitforyou
+channel=9
+auth_algs=1
+wpa=2
+wpa_passphrase=themostsecurepassword :D
+wpa_key_mgmt=WPA-PSK
+wpa_pairwise=TKIP CCMP
+rsn_pairwise=CCMP
 hw_mode=g
-macaddr_acl=0 
+macaddr_acl=0
 ignore_broadcast_ssid=0
 ```
 ## Configuration de de dnsmasq
@@ -89,3 +89,6 @@ interface=wlan0
 dhcp-range=192.168.1.10,192.168.1.100,255.255.255.0,24h
 ```
 ```systemctl start dnsmasq ```
+
+Démmarer HostAPD
+```sudo hostapd /etc/hostapd/hostapd.conf```

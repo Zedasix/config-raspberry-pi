@@ -7,7 +7,7 @@ Country=FR
 network={ 
   ssid=”WifiSSID” 
   scan_ssid=1 
-  psk=”lemotdepassedoitfaire8caractereminimumpascommecettepharesuperlonguepourrien” 
+  psk=”lemotdepassedoitfaire8caractereminimumpascommecettephrasesuperlonguepourrien” 
 key_mgmt=WPA-PSK}
 ```
 ## Installation des paquets

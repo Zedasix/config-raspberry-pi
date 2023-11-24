@@ -93,4 +93,4 @@ dhcp-range=192.168.1.10,192.168.1.100,255.255.255.0,24h
 ## Démmarer HostAPD 
 ```sudo hostapd /etc/hostapd/hostapd.conf```
 # Partie SQL
-Créer une table ESP_DATA avec une colonne ID, l'ESP8266 va envoyer chaque seconde un nombre +1
+Créer une base donnée esp_data, une table sensorDATA avec une colonne value1, l'ESP8266 va envoyer chaque seconde un nombre +1 dans la colonne de la table

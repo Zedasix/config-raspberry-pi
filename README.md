@@ -78,7 +78,7 @@ wpa_passphrase=test
 wpa_key_mgmt=WPA-PSK 
 wpa_pairwise=TKIP CCMP 
 rsn_pairwise=CCMP 
-hw_mode=n
+hw_mode=g
 macaddr_acl=0 
 ignore_broadcast_ssid=0
 ```

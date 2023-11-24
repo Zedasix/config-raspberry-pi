@@ -68,31 +68,18 @@ nohook wpa_supplicant
 ```sudo nano /etc/hostapd/hostapd.conf ```
 ```
 Country_code=FR 
-
 interface=wlan0 
-
 driver=nl80211 
-
 ssid=”test-WIFI” 
-
 channel=9 
-
 auth_algs=1 
-
 wpa=2 
-
 wpa_passphrase=test 
-
 wpa_key_mgmt=WPA-PSK 
-
 wpa_pairwise=TKIP CCMP 
-
 rsn_pairwise=CCMP 
-
-hw_mode=g 
-
+hw_mode=n
 macaddr_acl=0 
-
 ignore_broadcast_ssid=0
 ```
 ## Configuration de de dnsmasq

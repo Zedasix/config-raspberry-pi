@@ -8,7 +8,8 @@ network={
   ssid=”WifiSSID” 
   scan_ssid=1 
   psk=”lemotdepassedoitfaire8caractereminimumpascommecettephrasesuperlonguepourrien” 
-key_mgmt=WPA-PSK}
+  key_mgmt=WPA-PSK
+}
 ```
 ## Installation des paquets
 ### Mise à jour des dépots :

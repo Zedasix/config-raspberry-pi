@@ -1,5 +1,5 @@
 # Config Raspberry Pi 4 et un ESP8266 avec MySQL
-Tuto pour utiliser un ESP8266 connecté à un Raspberry Pi 4, ⚠️ la config n'est pas complete.
+ESP8266 connecté à un Raspberry Pi 4, ⚠️ la config n'est pas complete.
 ## Connexion au réseau wifi :
 ```sudo nano /etc/wpa_supplicant/wpa_supplicant.conf```
 ```
